@@ -1,0 +1,18 @@
+= Blueprint project
+Jochen Hinrichsen <jochen.hinrichsen@kambrium.net>
+
+== tl;dr
+
+A blueprint ECMAScript 2015 project for Node.js/ npm/ Babel/ Linting.
+
+=== Source maps
+
+Do not use source maps:
+
+----
+    "build": "npm run clean && cp -rf modules build && babel --optional runtime -d build ./modules",
+----
+
+Use source maps:
+
+    "build": "npm run clean && cp -rf modules build && babel --source-maps inline --optional runtime -d build ./modules"

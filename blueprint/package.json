@@ -1,0 +1,28 @@
+{
+  "name": "blueprint",
+  "version": "0.1.0",
+  "description": "An ECMAScript 2015 project blueprint for Node/ npm / Babel/ Linting.",
+  "main": "index.js",
+  "repository": "git@github.com:jhinrichsen/js-turf.git",
+  "scripts": {
+    "build": "npm run clean && cp -rf modules build && ",
+    "clean": "rm -rf build || true",
+    "lint": "eslint modules index.js",
+    "start": "node index.js",
+    "test": "babel-tape-runner \"modules/**/test/*-test.js\""
+  },
+  "author": "Jochen Hinrichsen",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.19",
+    "babel-eslint": "^4.0.5",
+    "babel-tape-runner": "^1.1.0",
+    "blue-tape": "^0.1.10",
+    "eslint": "^0.24.1",
+    "eslint-config-standard": "^3.4.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.8.19",
+    "source-map-support": "^0.3.2"
+  }
+}
