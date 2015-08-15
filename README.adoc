@@ -1,2 +1,5 @@
-# js-turf
+= js-turf
+
+image::https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat[Standard, link=https://github.com/feross/standard]
+
 ECMAScript turf - snippets, tests, demos, samples, ideas
