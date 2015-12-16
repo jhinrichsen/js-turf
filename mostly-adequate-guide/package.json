@@ -1,0 +1,14 @@
+{
+  "name": "mostly-adequate-guide",
+  "version": "0.1.0",
+  "description": "Source code for the corresponsing book",
+  "main": "functional.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jochen Hinrichsen",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.4.1"
+  }
+}

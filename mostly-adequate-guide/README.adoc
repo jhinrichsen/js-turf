@@ -1,0 +1,3 @@
+When trying to add a unit test framework, not matter if BDD or TDD or whatever, i tried Jasmine. Unforatunately, Jasmine requires the so-called spec files to be separated from the source, which does not make any sense for this micro setup.
+
+For now, go with the plain Chai framework.
