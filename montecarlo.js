@@ -2,8 +2,8 @@
 
 // A simulation of a game i' playing with my kids.
 
-// There are 4 cows, sheeps, cats, and pigs each
-const nAnimals = 12,
+// There are 3 cows, sheeps, cats, and pigs each
+const nAnimals = 3 * 4,
 
   // 5 portions of hay
   nHay = 5,
