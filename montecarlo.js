@@ -8,10 +8,11 @@ const nAnimals = 12,
   // 5 portions of hay
   nHay = 5,
 
-  //Roll a regular dice, return [1..n]
+  // Roll a regular dice, return [1..n]
   roll = n => Math.floor(1 + Math.random() * n),
 
   // The cock will wake up all animals
+  // Immutable state
   stepCock = state => {
     let c = Object.assign({}, state)
     c.awake = nAnimals
@@ -49,8 +50,8 @@ const nAnimals = 12,
     // When starting, all animals are awake
     awake: nAnimals,
 
-    // 5 portions of hay
-    hay: 5
+    // A couple of hay portions
+    hay: nHay
   },
 
   // Play one game, return true if won
@@ -59,7 +60,7 @@ const nAnimals = 12,
     while (true) {
       // A game step
       var fn = stepFn()
-      // Apply step to context
+      // Apply step function state
       state = fn(state)
       if (isWon(state)) return true
       if (isLost(state)) return false
